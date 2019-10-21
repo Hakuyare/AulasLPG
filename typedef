@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+struct ponto{
+  float x;
+  float y;
+};
+typedef struct ponto ponto;
+
+float distancia_pontos(ponto p1,ponto p2){
+  float parte1= pow(p1.x-p2.x,2);
+  float parte2= pow(p1.y-p2.y,2);
+  return sqrt(parte1+parte2);
+}
+
+int main(void){
+  ponto u,v;
+  scanf("%f %f %f %f",&u.x,&u.y,&v.x,&v.yy);
+  printf("\n %f\n",distancia_pontos(u,v));
+}
